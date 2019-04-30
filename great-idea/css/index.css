@@ -155,7 +155,7 @@ h5 {
 	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* =========================================== Home Section (index.html) ====================================== */
 
 /*  Start of Menu Section  */
 .menu-container {
@@ -180,8 +180,8 @@ h5 {
 	margin-top: 20px;
 	margin-left: 50px;
 }
-
 /* End of Menu Section */
+
 
 /* <!-- Start of  Jumbotron Section --> */
 .jumbotron-container {
@@ -215,7 +215,6 @@ h5 {
 	left: -200px;
 	top: -48px;
 }
-
 /*  End of  Jumbotron Section */
 
 
@@ -247,7 +246,6 @@ h5 {
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
-
 /* End of Main Section */
 
 
@@ -264,7 +262,6 @@ h5 {
 .contact-container address {
 	line-height: 2;
 }
-
 /*  End of Contact Section  */
 
 
@@ -275,8 +272,8 @@ footer h5 {
 	text-align: center;
 	margin-top: 20px;
 }
-
 /*  End of Footer Section  */
+
 
 hr {
 	width: 1200px;
@@ -323,8 +320,8 @@ hr {
 	width: 1200px;
 	margin-bottom: 50px;
 }
-
 /*  End of Services Figure Section */
+
 
 /*  Start of Services Top Section */
 .services-top-container {
@@ -335,34 +332,52 @@ hr {
 }
 /*  End of Services Top Section */
 
+
 /* Start of Services Middle Section */
 .services-middle-container {
 	width: 1200px;
-	height: 800px;
+	height: 900px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
-	align-items: stretch;
-	align-content: stretch;
+	align-content: space-between;
 }
 
 .services-middle-container .child-item {
 	margin: 0 auto;
-	margin-bottom: 10px;
-	width: 400px;
+	margin-bottom: 40px;
+	width: 550px;
 	height: 250px;
 	border: 1px solid black;
+	background: #f4f3f4;
 }
-	/* End of Services Middle Section */
+
+.services-middle-container .child-item h2 {
+	margin: 25px 15px;
+}
+
+.services-middle-container .child-item p {
+	margin: 25px 55px 10px 15px;
+}
+
+.services-middle-container .child-item button {
+	margin: 10px 10px;
+	margin-top: 25px;
+	padding: 10px 50px;
+	border-radius: 5px;
+	background: white;
+}
+/* End of Services Middle Section */
 
 
-	/* Start of Services Bottom Section */
+/* Start of Services Bottom Section */
 .services-bottom-section {
 	width: 1200px;
 	height: 400px;
 	margin: 0 auto;
+	margin-bottom: -30px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -370,7 +385,6 @@ hr {
 
 .services-bottom-section .child-item {
 	width: 600px;
-	/* height: 500px; */
 }
 
 .services-bottom-section .child-item p {
@@ -382,20 +396,19 @@ hr {
 	margin-top: 20px;
 	margin-left: 20px;
 	line-height: 25px;
-/* display: inline; */
 }
 
 .services-bottom-section figure {
 	width: 600px;
-
 }
 
-.services-bottom-section figure .services-info-img{
+.services-bottom-section figure .services-info-img {
 	width: 600px;
 	height: 330px;
-
+	padding-bottom: 25px;
+	padding-left: 45px;
 }
-	/* End of Services Bottom Section */
+/* End of Services Bottom Section */
 
 
 /*  Start of Services Footer Section  */
@@ -406,5 +419,3 @@ footer h5 {
 	margin-top: 20px;
 }
 /*  End of Services Footer Section  */
-
-
