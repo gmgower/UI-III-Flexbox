@@ -65,17 +65,14 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* Your code starts here! */
 /*  <!-- Start of Menu Section --> */
 .menu-container {
 	width: 1200px;
 	margin: 0 auto;
-	/* margin-bottom: 5px */
 	margin-bottom: 100px;
 }
 
 .menu-container ul {
-	/* display: inline-block; */
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -91,7 +88,6 @@ h1, h2, h3, h4, h5 {
 	margin-top: 20px;
 	margin-left: 50px;
 }
-
 /*<!-- End of Menu Section--> */
 
 
@@ -105,7 +101,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .jumbotron-container h1 {
-	/* display: inline-block; */
 	position: relative;
 	left: 175px;
 	bottom: 50px;
@@ -121,8 +116,6 @@ h1, h2, h3, h4, h5 {
 	position: relative;
 	right: 230px;
 	top: 220px;
-	/* right: 80px;
-	top: 2px; */
 }
 
 .jumbotron-container .logo1 {
@@ -130,7 +123,6 @@ h1, h2, h3, h4, h5 {
 	left: -200px;
 	top: -48px;
 }
-
 /*  End of  Jumbotron Section */
 
 
@@ -148,7 +140,6 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-
 }
 
 .figure-main-container .middle-img {
@@ -156,18 +147,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .bottom-main-container {
-	/* display: inline-block; */
 	display: flex;
 	flex-flow: row nowrap;
 	width: 1200px;
 	margin: 0 auto;
-	/* width: 387px; */
-	/* /* margin: 5px; */
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
-
 /* End of Main Section */
+
 
 /* Start of Contact Section  */
 .contact-container {
@@ -182,8 +170,8 @@ h1, h2, h3, h4, h5 {
 .contact-container address {
 	line-height: 2;
 }
-
 /*  End of Contact Section  */
+
 
 /*  Start of Footer Section  */
 footer h5 {
