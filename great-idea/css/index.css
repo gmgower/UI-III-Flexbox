@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/*  <!-- Start of Menu Section --> */
+/*  Start of Menu Section  */
 .menu-container {
 	width: 1200px;
 	margin: 0 auto;
@@ -88,8 +88,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 20px;
 	margin-left: 50px;
 }
-/*<!-- End of Menu Section--> */
-
+/* End of Menu Section */
 
 /* <!-- Start of  Jumbotron Section --> */
 .jumbotron-container {
@@ -187,3 +186,90 @@ hr {
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
+
+/*  =============================Services Section (serviecs.html)====================================== */
+
+/*  Start of Services Menu Section  */
+.services-menu-container {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.services-menu-container ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 50px;
+}
+
+.services-menu-container ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.services-menu-container .img {
+	margin-top: 20px;
+	margin-left: 50px;
+}
+/*  End of Services Menu Section  */
+
+
+/*  Start of Services Figure Section */
+.services-figure-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.services-figure-container .services-header-img {
+	width: 1200px;
+	margin-bottom: 50px;
+}
+/*  End of Services Figure Section */
+
+/*  Start of Services Top Section */
+.services-top-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+/*  End of Services Top Section */
+
+  /* Start of Services Middle Section */
+ .services-middle-container {
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.services-middle-container .child-item {
+	/* width: 1200px;
+	height: 500px; */
+	/* border: 1px solid red; */
+	margin: 0 auto;
+	margin-bottom: 10px;
+		width: 400px; 
+		 height: 250px;
+		border: 1px solid black;
+
+  /* End of Services Middle Section */
+
+/* .services-middle-container .child-item {
+} */
+
+	
+}
+/* .services-middle-container {
+	width: 1200px;
+	margin:  0 auto;
+	display: flex;
+	margin-bottom: 50px;
+} */
