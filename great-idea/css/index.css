@@ -64,3 +64,138 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+/*  <!-- Start of Menu Section --> */
+.menu-container {
+	width: 1200px;
+	margin: 0 auto;
+	/* margin-bottom: 5px */
+	margin-bottom: 100px;
+}
+
+.menu-container ul {
+	/* display: inline-block; */
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 50px;
+}
+
+.menu-container ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu-container .img {
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+/*<!-- End of Menu Section--> */
+
+
+/* <!-- Start of  Jumbotron Section --> */
+.jumbotron-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.jumbotron-container h1 {
+	/* display: inline-block; */
+	position: relative;
+	left: 175px;
+	bottom: 50px;
+	font-size: 80px;
+	padding: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.jumbotron-container button {
+	width: 125px;
+	height: 50px;
+	position: relative;
+	right: 230px;
+	top: 220px;
+	/* right: 80px;
+	top: 2px; */
+}
+
+.jumbotron-container .logo1 {
+	position: relative;
+	left: -200px;
+	top: -48px;
+}
+
+/*  End of  Jumbotron Section */
+
+
+/* Start of  Main Section*/
+.top-main-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.figure-main-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.figure-main-container .middle-img {
+	width: 1200px;
+}
+
+.bottom-main-container {
+	/* display: inline-block; */
+	display: flex;
+	flex-flow: row nowrap;
+	width: 1200px;
+	margin: 0 auto;
+	/* width: 387px; */
+	/* /* margin: 5px; */
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+/* End of Main Section */
+
+/* Start of Contact Section  */
+.contact-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-container h2 {
+	margin-top: 15px;
+}
+
+.contact-container address {
+	line-height: 2;
+}
+
+/*  End of Contact Section  */
+
+/*  Start of Footer Section  */
+footer h5 {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+/*  End of Footer Section  */
+
+hr {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
