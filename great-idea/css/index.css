@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,287 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* ====================================== Home Section (index.html) ====================================== */
+
+/*  Start of Menu Section  */
+.menu-container {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.menu-container ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 50px;
+}
+
+.menu-container ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu-container .img {
+	margin-top: 20px;
+	margin-left: 50px;
+}
+/* End of Menu Section */
+
+
+/* <!-- Start of  Jumbotron Section --> */
+.jumbotron-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.jumbotron-container h1 {
+	position: relative;
+	left: 175px;
+	bottom: 50px;
+	font-size: 80px;
+	padding: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.jumbotron-container button {
+	width: 125px;
+	height: 50px;
+	position: relative;
+	right: 230px;
+	top: 220px;
+}
+
+.jumbotron-container .logo1 {
+	position: relative;
+	left: -200px;
+	top: -48px;
+}
+/*  End of  Jumbotron Section */
+
+
+/* Start of  Main Section*/
+.top-main-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.figure-main-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.figure-main-container .middle-img {
+	width: 1200px;
+}
+
+.bottom-main-container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 1200px;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+/* End of Main Section */
+
+
+/* Start of Contact Section  */
+.contact-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-container h2 {
+	margin-top: 15px;
+}
+
+.contact-container address {
+	line-height: 2;
+}
+/*  End of Contact Section  */
+
+
+/*  Start of Footer Section  */
+footer h5 {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+/*  End of Footer Section  */
+
+
+hr {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/*  =============================Services Section (serviecs.html)====================================== */
+
+/*  Start of Services Menu Section  */
+.services-menu-container {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 50px 0px;
+}
+
+.services-menu-container ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 50px 10px;
+}
+
+.services-menu-container ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.services-menu-container .img {
+	margin-top: 20px;
+	margin-left: 50px;
+}
+/*  End of Services Menu Section  */
+
+
+/*  Start of Services Figure Section */
+.services-figure-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.services-figure-container .services-header-img {
+	width: 1200px;
+	margin-bottom: 50px;
+}
+/*  End of Services Figure Section */
+
+
+/*  Start of Services Top Section */
+.services-top-container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+/*  End of Services Top Section */
+
+
+/* Start of Services Middle Section */
+.services-middle-container {
+	width: 1200px;
+	height: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.services-middle-container .child-item {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	width: 550px;
+	height: 250px;
+	border: 1px solid black;
+	background: #f4f3f4;
+}
+
+.services-middle-container .child-item h2 {
+	margin: 25px 15px;
+}
+
+.services-middle-container .child-item p {
+	margin: 25px 55px 10px 15px;
+}
+
+.services-middle-container .child-item button {
+	margin: 10px 10px;
+	margin-top: 25px;
+	padding: 10px 50px;
+	border-radius: 5px;
+	background: white;
+}
+/* End of Services Middle Section */
+
+
+/* Start of Services Bottom Section */
+.services-bottom-section {
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	margin-bottom: -30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.services-bottom-section .child-item {
+	width: 600px;
+}
+
+.services-bottom-section .child-item p {
+	margin-right: 100px;
+}
+
+.services-bottom-section .child-item ul {
+	list-style-type: square;
+	margin-top: 20px;
+	margin-left: 20px;
+	line-height: 25px;
+}
+
+.services-bottom-section figure {
+	width: 600px;
+}
+
+.services-bottom-section figure .services-info-img {
+	width: 600px;
+	height: 330px;
+	padding-bottom: 25px;
+	padding-left: 45px;
+}
+/* End of Services Bottom Section */
+
+
+/*  Start of Services Footer Section  */
+footer h5 {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*  End of Services Footer Section  */
